@@ -34,20 +34,14 @@ int main(int argc, char **argv) {
 
 	std::cout << " - - - - - Result - - - - -" << std::endl;
 
-	auto maximum_sort = maximums;
-	auto forward_sort = forward;
-
-	std::sort(maximum_sort.begin(), maximum_sort.end());
-	std::sort(forward_sort.begin(), forward_sort.end());
-
 	std::cout << "Maximum" << std::endl;
-	for(auto &&m : maximum_sort) {
+	for(auto &&m : maximums) {
 		std::cout << m << " ";
 	}
 	std::cout << std::endl;
 
 	std::cout << "Forward" << std::endl;
-	for(auto &&f : forward_sort) {
+	for(auto &&f : forwards) {
 		std::cout << f << " ";
 	}
 	std::cout << std::endl;
